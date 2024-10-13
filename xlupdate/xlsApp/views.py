@@ -24,7 +24,7 @@ def update_database(request):
 
     # Get the uploaded file
     excel_file = request.FILES['file.xlsx']
-
+    print(excel_file)
     # Read the Excel file into a DataFrame
     try:
         df = pd.read_excel(excel_file)
