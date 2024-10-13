@@ -23,6 +23,7 @@ def update_database(request):
         return Response({"error": "No file provided"}, status=status.HTTP_400_BAD_REQUEST)
 
     # Get the uploaded file
+    # print the excel_file
     excel_file = request.FILES['file.xlsx']
     print(excel_file)
     # Read the Excel file into a DataFrame
